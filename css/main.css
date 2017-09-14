@@ -1,0 +1,65 @@
+/* -------------- CLEARFIX ------------------*/
+/* Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border` */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+
+/* -------------- GLOBAL STYLING ------------------*/
+
+body {
+	background: rgba(255, 210, 67, 1);
+	color: rgba(0, 0, 0, 1);
+	font-family: courier, sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+h1 {
+	font-size: 8rem;
+	font-family: industry-inc-3d, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 2.4rem;
+	font-family: industry-inc-base, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-family: industry-inc-base, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* -------------- NAVIGATION STYLING ------------------*/
+
+.sidebar {
+	width: 25%;
+	height: 100vh;
+	border-right: 2px #000 solid;
+	position: fixed;
+	padding: 5%;
+}
+
+.main {
+	margin-left: 25%;
+	position: relative;
+	padding: 5%;
+}
