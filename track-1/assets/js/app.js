@@ -11,7 +11,7 @@ function addElement () {
   // create a new div element 
   var newDiv = document.createElement("div"); 
   //adds html to newDiv
-  $(newDiv).html("<img src='assets/img/your_mirror.png'/>");
+  $(newDiv).html("<img src='assets/img/your_mirror.svg'/>");
   //creates and adds a class
   $(newDiv).addClass("new");
   // add the newly created element and its content into the DOM 
@@ -21,7 +21,7 @@ function addElement () {
 }
 
 function addElements () {
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 15; i++) {
         addElement();
     }
 }
