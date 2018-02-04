@@ -10,10 +10,8 @@ $( document ).ready(function() {
 function addElement () { 
   // create a new div element 
   var newDiv = document.createElement("div"); 
-  // and give it some content 
-  var newContent = document.createTextNode("I'll be your mirror"); 
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);
+  //adds html to newDiv
+  $(newDiv).html("<img src='assets/img/your_mirror.png'/>");
   //creates and adds a class
   $(newDiv).addClass("new");
   // add the newly created element and its content into the DOM 
