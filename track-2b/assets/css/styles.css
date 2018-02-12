@@ -13,68 +13,92 @@ body {
     width: 98%;
 }
 
-
-
-/* @keyframes example {
-    from {fill: white;}
-    to {fill: black;}
+.c {
+    display: inline-block;
+    height: 25vh;
 }
 
-@keyframes example2 {
-    from {background: black;}
-    to {background: white;}
+@keyframes stretch1 {
+    from {width: 19%;}
+    to {width: 80%;}
+}
+
+@keyframes stretch2 {
+    from {width: 80%;}
+    to {width: 19%;}
+}
+
+@keyframes stretch3 {
+    from {width: 9%;}
+    to {width: 79%;}
+}
+
+@keyframes stretch4 {
+    from {width: 45%;}
+    to {width: 10%;}
+}
+
+.c1 {
+    animation-name: stretch1;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c2 {
+    animation-name: stretch2;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c3 {
+    animation-name: stretch3;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c4 {
+    animation-name: stretch4;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+.o:hover {
+    opacity: 0;
+}
+
+.w1:hover {
+    opacity: 0;
+}
+
+.w2:hover {
+    opacity: 0;
+}
+
+/* @keyframes stretch3 {
+    from {height: 3vh;}
+    to {height: 47vh;}
+}
+
+@keyframes stretch4 {
+    from {height: 47vh;}
+    to {height: 3vh;}
+}
+
+.h1 {
+    animation-name: stretch3;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.h1 .c {
+    animation-name: stretch3;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
 } */
-
-.w2 {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.w1 {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.o {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-body {
-    animation-name: example2;
-    animation-duration: 2s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.emoji {
-    z-index: 2;
-    position: absolute;
-    top: 10px;
-    height: 200px;
-    width: 600px;
-    font-size: 80pt;
-    left: 10%;
-    text-align: center;
-}
-
-.hand1 {
-    transform: rotate(12deg);
-    margin-left: -20px;
-}
-
-.face1 {
-    transform: rotate(12deg);
-    margin-left: 400px;
-}
-
-.hand2 {
-    transform: rotate(-10deg);
-    margin-left: 650px;
-}
