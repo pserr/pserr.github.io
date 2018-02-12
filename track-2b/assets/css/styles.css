@@ -15,7 +15,7 @@ body {
 
 
 
-@keyframes example {
+/* @keyframes example {
     from {fill: white;}
     to {fill: black;}
 }
@@ -23,7 +23,7 @@ body {
 @keyframes example2 {
     from {background: black;}
     to {background: white;}
-}
+} */
 
 .w2 {
     animation-name: example;
