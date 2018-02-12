@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-    height: 97vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .c {
     display: inline-block;
-    height: 25vh;
+    height: 20vh;
 }
 
 @keyframes stretch1 {
@@ -35,6 +35,16 @@ body {
 
 @keyframes stretch4 {
     from {width: 45%;}
+    to {width: 10%;}
+}
+
+@keyframes stretch5 {
+    from {width: 9%;}
+    to {width: 39%;}
+}
+
+@keyframes stretch6 {
+    from {width: 40%;}
     to {width: 10%;}
 }
 
@@ -62,6 +72,20 @@ body {
 .c4 {
     animation-name: stretch4;
     animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c5 {
+    animation-name: stretch5;
+    animation-duration: 2.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c6 {
+    animation-name: stretch6;
+    animation-duration: 2.5s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
 }
