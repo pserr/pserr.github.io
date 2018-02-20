@@ -1,4 +1,5 @@
 * { box-sizing: border-box; }
+
 body{
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ body{
   width: 100%;
   padding: 50px;
   top: 0;
-  bottom 0;
+  bottom: 0;
 }
 .content{
   width: 987px;
@@ -26,6 +27,10 @@ body{
   cursor: pointer;
 }
 
+.hide {
+  display:none;
+}
+
 
 .item img{
   width: 100%;
@@ -33,4 +38,56 @@ body{
 }
 .item:hover add-button{
   border-bottom: 2px solid #000;
+}
+
+.cart-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  width: 675px;
+}
+
+.close-button {
+  text-align: right;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.line-item {
+  position: relative;
+  padding: 25px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.line-item-img {
+  height: 100px;
+  width: 100px;
+  background: url('../img/b.jpg') center center no-repeat;
+  background-size: cover;
+
+}
+
+.line-item-price {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.checkout-button {
+  margin-top: 40px;
+  background: #fff;
+  color: #000;
+  text-align: center;
 }
