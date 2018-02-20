@@ -25,9 +25,21 @@
     //   $('.item').html(new_count);
   
     //   $(this).addClass('in-cart');
+
+    //   add_to_cart(this);
   
     });
 
     $('.toggle').click(function() {
       $('.cart').toggleClass('hide');
     });
+
+    function add_to_cart(line_item) {
+      //get img and price of item clicked
+      //inject html with img and price
+      // var price = $(this).
+      debugger;
+
+      var price = $(line_item).data('price'),
+          img = $(line_item).data('img');
+    };

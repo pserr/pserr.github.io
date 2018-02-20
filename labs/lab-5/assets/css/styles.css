@@ -13,6 +13,8 @@ body{
   padding: 50px;
   top: 0;
   bottom: 0;
+  height: 100px;
+  z-index: 100;
 }
 .content{
   width: 987px;
@@ -31,12 +33,11 @@ body{
   display:none;
 }
 
-
 .item img{
   width: 100%;
   margin-bottom: 10px;
 }
-.item:hover add-button{
+.item:hover .add-button{
   border-bottom: 2px solid #000;
 }
 
