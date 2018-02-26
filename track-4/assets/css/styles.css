@@ -6,19 +6,31 @@ body {
 .wrapper {
     height: 100vh;
     width: 100vw;
+    border: 1px solid #AAA;
 }
 
 .wrapper svg{
     height: 98%;
     width: 98%;
+    border: 1px solid #ff0000;
 }
 
 .c {
     display: inline-block;
     height: 20vh;
+    border: 1px solid #00ff00;
 }
 
-@keyframes stretch1 {
+.l {
+    width: 100px;
+}
+
+.letter {
+    display: inline-block;
+    width: 200px;
+}
+
+/* @keyframes stretch1 {
     from {width: 19%;}
     to {width: 80%;}
 }
@@ -46,7 +58,7 @@ body {
 @keyframes stretch6 {
     from {width: 40%;}
     to {width: 10%;}
-}
+} */
 
 .c1 {
     animation-name: stretch1;
@@ -91,17 +103,6 @@ body {
 }
 
 
-.o:hover {
-    opacity: 0;
-}
-
-.w1:hover {
-    opacity: 0;
-}
-
-.w2:hover {
-    opacity: 0;
-}
 
 /* @keyframes stretch3 {
     from {height: 3vh;}

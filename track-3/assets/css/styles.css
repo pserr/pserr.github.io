@@ -1,0 +1,128 @@
+body {
+    background: white;
+    color: black;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper svg{
+    height: 98%;
+    width: 98%;
+}
+
+.c {
+    display: inline-block;
+    height: 20vh;
+}
+
+@keyframes stretch1 {
+    from {width: 19%;}
+    to {width: 80%;}
+}
+
+@keyframes stretch2 {
+    from {width: 80%;}
+    to {width: 19%;}
+}
+
+@keyframes stretch3 {
+    from {width: 9%;}
+    to {width: 79%;}
+}
+
+@keyframes stretch4 {
+    from {width: 45%;}
+    to {width: 10%;}
+}
+
+@keyframes stretch5 {
+    from {width: 9%;}
+    to {width: 39%;}
+}
+
+@keyframes stretch6 {
+    from {width: 40%;}
+    to {width: 10%;}
+}
+
+.c1 {
+    animation-name: stretch1;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c2 {
+    animation-name: stretch2;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c3 {
+    animation-name: stretch3;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c4 {
+    animation-name: stretch4;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c5 {
+    animation-name: stretch5;
+    animation-duration: 2.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.c6 {
+    animation-name: stretch6;
+    animation-duration: 2.5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+.o:hover {
+    opacity: 0;
+}
+
+.w1:hover {
+    opacity: 0;
+}
+
+.w2:hover {
+    opacity: 0;
+}
+
+/* @keyframes stretch3 {
+    from {height: 3vh;}
+    to {height: 47vh;}
+}
+
+@keyframes stretch4 {
+    from {height: 47vh;}
+    to {height: 3vh;}
+}
+
+.h1 {
+    animation-name: stretch3;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.h1 .c {
+    animation-name: stretch3;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+} */
