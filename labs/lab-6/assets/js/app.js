@@ -42,4 +42,7 @@
 
       var price = $(line_item).data('price'),
           img = $(line_item).data('img');
+          line_item_html = '...'
+
+          $('.line-items').prepend(line_item_html);
     };
