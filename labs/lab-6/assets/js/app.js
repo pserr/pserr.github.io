@@ -46,3 +46,12 @@
 
           $('.line-items').prepend(line_item_html);
     };
+
+
+//create event listener for things modified or created in dom after page load
+    $('.line-items').on('click', '.line-item', function(){
+      
+      var current_value = $('.total').data();
+      
+      $(this).html('').removeClass('line-item');
+    });

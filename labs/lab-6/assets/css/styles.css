@@ -69,6 +69,7 @@ body{
   position: relative;
   padding: 25px 0;
   border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 
 .line-item-img {
@@ -92,3 +93,10 @@ body{
   color: #000;
   text-align: center;
 }
+
+.line-item:hover .line-item-img{
+  background: #fff;
+  background-image: url('../img/close.svg');
+}
+
+.line-item-img.a { background-image: url('')}
