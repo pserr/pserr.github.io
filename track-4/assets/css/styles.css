@@ -1,44 +1,95 @@
 body {
     background: white;
     color: black;
+    font-size: 0px;
+    margin: 0px;
 }
 
 .wrapper {
     height: 100vh;
     width: 100vw;
-    border: 1px solid #AAA;
+    /* border: 1px solid #AAA; */
+    margin: 5vh;
 }
 
 .wrapper svg{
-    height: 98%;
-    width: 98%;
-    border: 1px solid #ff0000;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #ff0000; */
 }
 
 .c {
     display: inline-block;
     height: 20vh;
-    border: 1px solid #00ff00;
+    /* border: 1px solid #00ff00; */
+}
+
+.row {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.n1 {
+    display: inline-block;
+    margin-right: 10vh;
+}
+
+.n2 {
+    display: inline-block;
+    margin-right: 2vh;
 }
 
 .l {
-    width: 100px;
+    width: 5vh;
+}
+
+.n1 .v {
+    animation-name: stretch1;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.n2 .v {
+    animation-name: stretch2;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.o {
+    width: 20vh;
+    margin-right: 2vh;
+}
+
+.a {
+    width: 20vh;
+    margin-right: 2vh;
+}
+
+.d {
+    width: 20vh;
+    margin-right: 10vh;
 }
 
 .letter {
     display: inline-block;
     width: 200px;
+    fill: red;
 }
 
-/* @keyframes stretch1 {
-    from {width: 19%;}
-    to {width: 80%;}
+@keyframes stretch1 {
+    from {width: 3vw;}
+    to {width: 35vw;}
 }
+
 
 @keyframes stretch2 {
-    from {width: 80%;}
-    to {width: 19%;}
+    from {width: 35vw;}
+    to {width: 3vw;}
 }
+
+/*
 
 @keyframes stretch3 {
     from {width: 9%;}
@@ -60,7 +111,7 @@ body {
     to {width: 10%;}
 } */
 
-.c1 {
+/* .c1 {
     animation-name: stretch1;
     animation-duration: 1s;
     animation-direction: alternate-reverse;
@@ -100,30 +151,5 @@ body {
     animation-duration: 2.5s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
-}
-
-
-
-/* @keyframes stretch3 {
-    from {height: 3vh;}
-    to {height: 47vh;}
-}
-
-@keyframes stretch4 {
-    from {height: 47vh;}
-    to {height: 3vh;}
-}
-
-.h1 {
-    animation-name: stretch3;
-    animation-duration: 4s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.h1 .c {
-    animation-name: stretch3;
-    animation-duration: 4s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
 } */
+
