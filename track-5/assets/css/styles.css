@@ -15,6 +15,31 @@ body {
   padding: 0;
 }
 
+.hidden {
+  display:none;
+}
+
+.shown {
+}
+
+a {
+  fill: #ddd;
+}
+
+a:hover {
+  cursor: pointer;
+  fill: #000;
+}
+
+#ff {
+  width: 60px;
+  position: absolute;
+  top: 48vh;
+  left: 46vw;
+  fill: #DDD;
+}
+
+
 .fake {
   width: 90vw;
   height: 90vh;

@@ -20,9 +20,10 @@ function setPlaySpeed() {
 }
 
 $(document).on("click", setPlaySpeed);
-$(document).on("click", changeSvg);
+$(document).on("click", changeLetters);
+$(document).on("click", changeFf);
 
-function changeSvg() {
+function changeLetters() {
   var $paths = $(".fake");
   if ($paths.hasClass("on")) {
     $paths.addClass("off");
@@ -30,6 +31,17 @@ function changeSvg() {
   } else if ($paths.hasClass("off")){
     $paths.removeClass("off");
     $paths.addClass("on");
+  }
+}
+
+function changeFf() {
+  var $ff = $("#ff");
+  if ($ff.hasClass("hidden")) {
+    $ff.removeClass("hidden");
+    $ff.addClass("shown");
+  } else if ($ff.hasClass("shown")){
+    $ff.removeClass("shown");
+    $ff.addClass("hidden");
   }
 }
 // $(document).toggle("click", setPlaySpeed);
