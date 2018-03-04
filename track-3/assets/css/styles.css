@@ -91,9 +91,46 @@ body {
     animation-iteration-count: infinite;
 }
 
-.heart1 {
+.ff {
     position: absolute;
-    z-index: 5;
-    top: 300px;
-    left: 300px;
+    z-index: 100;
+    width: 100px;
+    top: 150px;
+    right: 100px;
+}
+
+.ff:hover {
+    cursor: pointer;
+}
+
+
+.heart {
+    position: absolute;
+    z-index: 100;
+    width: 100px;
+}
+
+.heart1 {
+    top: 100px;
+    left: 100px;
+}
+
+.heart2 {
+    top: 130px;
+    left: 200px;
+}
+
+.heart3 {
+    top: 240px;
+    left: 400px;
+}
+
+.heart4 {
+    top: 400px;
+    left: 500px;
+}
+
+.heart5 {
+    top: 420px;
+    left: 50px;
 }
