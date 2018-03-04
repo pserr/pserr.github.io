@@ -15,6 +15,5 @@ function setup() {
 }
 
 function draw() {
-	camY -= 50;
 
 }
