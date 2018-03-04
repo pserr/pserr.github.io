@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Sachsenwald Regular";
+    src: url("../fonts/Sachsenwald_Regular.otf") format("opentype");
+  }
+
 audio {
     position: absolute;
     top: 50px;
@@ -7,6 +12,9 @@ audio {
 body {
     background-color: #000;
     color: #fff;
-    font-family: sans-serif;
+    font-family: "Sachsenwald Regular";
+    font-size: 60px;
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
 }
-
