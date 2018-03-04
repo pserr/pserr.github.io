@@ -91,39 +91,9 @@ body {
     animation-iteration-count: infinite;
 }
 
-
-/* .o:hover {
-    opacity: 0;
+.heart1 {
+    position: absolute;
+    z-index: 5;
+    top: 300px;
+    left: 300px;
 }
-
-.w1:hover {
-    opacity: 0;
-}
-
-.w2:hover {
-    opacity: 0;
-} */
-
-/* @keyframes stretch3 {
-    from {height: 3vh;}
-    to {height: 47vh;}
-}
-
-@keyframes stretch4 {
-    from {height: 47vh;}
-    to {height: 3vh;}
-}
-
-.h1 {
-    animation-name: stretch3;
-    animation-duration: 4s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.h1 .c {
-    animation-name: stretch3;
-    animation-duration: 4s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-} */
