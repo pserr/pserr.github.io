@@ -2,8 +2,15 @@ audio {
   display:none;
 }
 
-body {
+.black {
   background: black;
+}
+
+.white {
+  background: white;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -12,6 +19,14 @@ body {
   width: 90vw;
   height: 90vh;
   margin: 5vh 5vw;
+  position: absolute;
+}
+
+.flicker {
+  animation-name: flicker;
+  animation-duration: 0.06s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
 
 .fake svg {
@@ -19,3 +34,7 @@ body {
   height: 100%;
 } 
 
+@keyframes flicker {
+  from {opacity: 0.2;}
+  to {opacity: 1;}
+}
