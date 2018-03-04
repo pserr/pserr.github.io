@@ -1,57 +1,20 @@
-// line challenge solution
-
-var freq_slider;
-var amplitude_slider;
-var time_slider;
-
-
-  
-var startX = 50;
-var startY = 350;
-var endX = 350;
-var endY = 50;
-
-
-var t = 0;
+let camX = 300;
+let camY = 300;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400,400);
+	// background(255);
+	let cam1 = createCapture(VIDEO);
+	// let cam2 = createCapture(VIDEO);
+	cam1.size(320, 240);
+	camY -= 100;
 
-
-
+	cam1.position(camX, camY);
+	// cam2.size(320, 240);
+	// cam2.position(400, 400);
 }
 
-
 function draw() {
-	background(50);
-	ellipseMode(CENTER);
-
-	var frequency = 50 / 10;
-	var amplitude = 50 / 100;
-	var timeStep = 50/ 1000;
-
-	t+=timeStep;
-	noiseDetail(1, .5);
-
-
-
-	fill(255);
-	noStroke();
-  
-  
-
-  
-  
-	for(i = 0; i < 1; i+=.02) {
-		frameRate(30);
-		var x = lerp(mouseX, pmouseX + 100, i);
-		var y = lerp(mouseY, pmouseY+ 100, i);
-		var offsetX = noise(i * frequency + t) * amplitude * 100;
-		var offsetY = noise(i * frequency + t, 100) * amplitude * 100;
-
-		ellipse(x + offsetX, y + offsetY, 10, 10);
-	}
-
-
+	camY -= 50;
 
 }
