@@ -12,14 +12,24 @@ function setPlaySpeed() {
     $("body").removeClass("white");
     $("body").addClass("black");
   } else {
-  audio[0].playbackRate = 0.7;
+  audio[0].playbackRate = 0.6;
   $("body").removeClass("black");
   $("body").addClass("white");
   audio.addClass("slow");
-  console.log(audio);
   }
 }
 
 $(document).on("click", setPlaySpeed);
+$(document).on("click", changeSvg);
 
+function changeSvg() {
+  var $paths = $(".fake");
+  if ($paths.hasClass("on")) {
+    $paths.addClass("off");
+    $paths.removeClass("on");
+  } else if ($paths.hasClass("off")){
+    $paths.removeClass("off");
+    $paths.addClass("on");
+  }
+}
 // $(document).toggle("click", setPlaySpeed);

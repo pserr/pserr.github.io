@@ -68,5 +68,26 @@ function rotatingSphere() {
   rotateY(frameCount * 0.02);
 	// torus(80, 20, 10, 10);
 	sphere(150);
+	pop();
+	push();
+  rotateZ(frameCount * 0.02);
+  rotateX(frameCount * 0.02);
+  rotateY(frameCount * 0.02);
+	// torus(80, 20, 10, 10);
+	sphere(150);
+	pop();
+	push();
+  rotateZ(frameCount * 0.02);
+  rotateX(frameCount * 0.02);
+  rotateY(frameCount * 0.02);
+	// torus(80, 20, 10, 10);
+	sphere(150);
+	pop();
+	push();
+  rotateZ(frameCount * 0.02);
+  rotateX(frameCount * 0.02);
+  rotateY(frameCount * 0.02);
+	// torus(80, 20, 10, 10);
+	sphere(150);
   pop();
 }

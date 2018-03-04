@@ -34,6 +34,20 @@ body {
   height: 100%;
 } 
 
+.on svg path {
+  fill: none;
+  stroke: #FFF;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
+.off svg path {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
 @keyframes flicker {
   from {opacity: 0.2;}
   to {opacity: 1;}
