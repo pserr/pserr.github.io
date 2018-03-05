@@ -30,7 +30,9 @@ body {
   background: #000;
   color: #fff;
   width: 675px;
-  padding: 25px 40px 40px 40px;
+  height: 100vh;
+  padding: 97px 40px 250px 40px;
+  overflow: scroll;
 }
 
 .cart.hide {
@@ -39,19 +41,40 @@ body {
 
 .close-button {
   text-align: right;
+  background: #000;
   border-bottom: 1px solid #fff;
+  padding-top:25px;
   padding-bottom: 25px;
+  padding-right:35px;
   cursor: pointer;
+  position: fixed;
+  top: 0px;
+  right: 35px;
+  width: 605px;
+  z-index: 10;
+}
+
+.cart-bottom {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background: #000;
+  width: 675px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 35px;
 }
 
 .total-wrapper {
   margin-top: 35px;
   position: relative;
+  border-top: 1px solid #fff;
+  padding-top: 25px;
 }
 
 .total {
   position: absolute;
-  top: 0;
+  top: 25;
   right: 0;
 }
 
