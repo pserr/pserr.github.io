@@ -1,50 +1,40 @@
+@font-face {
+    font-family: "Sachsenwald Regular";
+    src: url("../fonts/Sachsenwald_Regular.otf") format("opentype");
+  }
+
 body {
     background: white;
     color: black;
+    font-family: "Sachsenwald Regular";
+    text-align: center;
+    font-size: 60px;
 }
 
-.wrapper {
-    height: 97vh;
-    width: 100vw;
+img {
+    margin-top: 20vh;
 }
 
-.wrapper svg{
-    height: 98%;
-    width: 98%;
-}
+
 
 
 
 @keyframes example {
-    from {fill: white;}
-    to {fill: black;}
+    from {color: white;}
+    to {color: black;}
 }
 
 @keyframes example2 {
     from {background: black;}
     to {background: white;}
 }
-
-.w2 {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+@keyframes invert {
+    from {-webkit-filter: invert(100%);
+        filter: invert(100%);}
+    to {-webkit-filter: invert(0%);
+        filter: invert(0%);}
 }
 
-.w1 {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.o {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
 
 body {
     animation-name: example2;
@@ -53,28 +43,19 @@ body {
     animation-iteration-count: infinite;
 }
 
-.emoji {
-    z-index: 2;
+.inverter {
+    animation-name: invert;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+p {
     position: absolute;
-    top: 10px;
-    height: 200px;
-    width: 600px;
-    font-size: 80pt;
-    left: 10%;
-    text-align: center;
-}
-
-.hand1 {
-    transform: rotate(12deg);
-    margin-left: -20px;
-}
-
-.face1 {
-    transform: rotate(12deg);
-    margin-left: 400px;
-}
-
-.hand2 {
-    transform: rotate(-10deg);
-    margin-left: 650px;
-}
+    top: 40vh;
+    width: 100vw;
+    z-index: 5;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;}
