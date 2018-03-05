@@ -9,6 +9,7 @@ body {
     font-family: "Sachsenwald Regular";
     text-align: center;
     font-size: 60px;
+    cursor: url('../img/ff-2.png'), auto;
 }
 
 img {
