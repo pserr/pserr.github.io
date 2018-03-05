@@ -1,27 +1,3 @@
-let camX = 300;
-let camY = 300;
-
-let ballX1 = 0;
-let ballY1 = 200;
-let ballX2 = 70;
-let ballY2 = 500;
-let ballX3 = 400;
-let ballY3 = 300;
-let ballX4 = 300;
-let ballY4 = 20;
-let ballX5 = 70;
-let ballY5 = 130;
-
-let ballSpeedX1 = 2;
-let ballSpeedY1 = 0.8;
-let ballSpeedX2 = -0.8;
-let ballSpeedY2 = -2;
-let ballSpeedX3 = -0.3;
-let ballSpeedY3 = -1;
-let ballSpeedX4 = 0.3;
-let ballSpeedY4 = 1;
-let ballSpeedX5 = 2.3;
-let ballSpeedY5 = 1.2;
 
 let ctracker;
 
