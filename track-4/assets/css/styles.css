@@ -125,3 +125,17 @@ body {
     /* End Required */
     
     /* End Circle Text Styles */
+
+
+    #ff {
+        width: 40px;
+        position: absolute;
+        z-index: 100;
+        top: 20px;
+        right: 20px;
+        fill: #000;
+    }
+    
+    #ff:hover {
+        fill: #AAA;
+    }
