@@ -1,28 +1,8 @@
-// A $( document ).ready() block.
-$( document ).ready(function() {
-  console.log( "ready!" );
+// import Typed from 'typed.js';
 
-});
-
-
-
-// function changeWord(divID) {
-//   nIntervId = setInterval(changeWordOnce, 500, divID);
+// var options = {
+//   strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+//   typeSpeed: 40
 // }
 
-// function changeWordOnce(divID) {
-//   console.log(divID);
-//   var str = divID;
-//   var arr = str.slice(1);
-//   console.log(arr);
-//   var arr = $(arr);
-//   console.log(arr);
-//   var i = valueFromDeck();
-//   $(divID).html(quick[i]);
-
-//   window[arr]
-// }
-
-// function stopChange() {
-// clearInterval(nIntervId);
-// }
+// var typed = new Typed(".element", options);

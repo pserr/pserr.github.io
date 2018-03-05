@@ -4,42 +4,34 @@ body {
 }
 
 .wrapper {
-    height: 97vh;
-    width: 100vw;
+    height: 98vh;
+    width: 99vw;
 }
 
 .wrapper svg{
-    height: 98%;
-    width: 98%;
+    height: 100%;
+    width: 100%;
 }
 
-
+audio {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    display:none;
+}
 
 @keyframes example {
-    from {fill: white;}
-    to {fill: black;}
+    from {fill: blue;}
+    to {fill: red;}
 }
 
 @keyframes example2 {
-    from {background: black;}
-    to {background: white;}
+    from {background: red;}
+    to {background: blue;}
 }
 
-.w2 {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.w1 {
-    animation-name: example;
-    animation-duration: 0.01s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-
-.o {
+.letter {
     animation-name: example;
     animation-duration: 0.01s;
     animation-direction: alternate-reverse;
@@ -48,33 +40,8 @@ body {
 
 body {
     animation-name: example2;
-    animation-duration: 2s;
+    animation-duration: 0.2s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
 }
 
-.emoji {
-    z-index: 2;
-    position: absolute;
-    top: 10px;
-    height: 200px;
-    width: 600px;
-    font-size: 80pt;
-    left: 10%;
-    text-align: center;
-}
-
-.hand1 {
-    transform: rotate(12deg);
-    margin-left: -20px;
-}
-
-.face1 {
-    transform: rotate(12deg);
-    margin-left: 400px;
-}
-
-.hand2 {
-    transform: rotate(-10deg);
-    margin-left: 650px;
-}
