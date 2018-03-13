@@ -39,7 +39,8 @@ function setup() {
 	let cam2 = createCapture(VIDEO);
 	cam2.size(320, 240);
 	cam2.position(400, 400);
-	cam2.hide();
+	// console.log(cam2);
+	// cam2.hide();
 
 
 }
@@ -147,16 +148,20 @@ if (ballY5 > windowHeight - 15) {
 
 	// cam2.loadPixels();
 
-	cam2.loadPixels();
-  for (var cy = 0; cy < cam2.height; cy += 10) {
-    for (var cx = 0; cx < cam2.width; cx += 5) {
-      var offset = ((cy*cam2.width)+cx)*4;
-      var xpos = (cx / cam2.width) * width;
-      var ypos = (cy / cam2.height) * height;
-      rect(xpos, ypos, 10,
-        10 * (cap.pixels[offset+1]/255));
-    }
-  }
+	console.log(cam2);
+// 	if (cam2 == 'true') {
+// 	cam2.loadPixels();
+//   for (var cy = 0; cy < cam2.height; cy += 10) {
+//     for (var cx = 0; cx < cam2.width; cx += 5) {
+//       var offset = ((cy*cam2.width)+cx)*4;
+//       var xpos = (cx / cam2.width) * width;
+//       var ypos = (cy / cam2.height) * height;
+//       rect(xpos, ypos, 10,
+//         10 * (cap.pixels[offset+1]/255));
+//     }
+// 	}
+// 	console.log(cam2);
+// }
 
 
 
