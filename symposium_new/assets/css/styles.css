@@ -197,14 +197,15 @@ body {
         top: 0px;
         width: 100vw;
         height: 100vh;
+        overflow: hidden;
     }
     
     .wrapper {
         position: relative;
         background: #fff;
-        width: 62vh;
-        height: 88vh;
-        margin: 6vh auto;
+        width: 88vw;
+        height: 76vh;
+        margin: 12vh auto;
         padding: 4vh;
         z-index: 2;
         border: 1px solid #A4AAB3;
@@ -213,7 +214,7 @@ body {
     
     .container {
         position: relative;
-        width: 54vh;
+        width: 74vw;
         height: 80vh;
     }
 
@@ -225,7 +226,33 @@ body {
         height: 100vh;
         background: #000;
         font-family: Helvetica, sans-serif;
-        padding: 4vw;
+        padding: 4vh;
     }
 
+    .title {
+        font-size: 5vh;
+        line-height: 6vh;
+    }
+
+    .spacer {
+        height: 5vh;
+        margin-bottom: 1vh;
+        vertical-align: bottom;
+    }
+
+    #date {
+        font-size: 8vh;
+    }
+    
+    #address {
+        margin-top: 12vh;
+        font-size: 3vh;
+    }
+    
+    #speakers {
+        font-size: 5vh;
+        position: absolute;
+        bottom: 4vw;
+        left: 8vw;
+    }
 }
