@@ -1,0 +1,44 @@
+body {
+    background: white;
+    color: black;
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.section {
+    text-align: justify;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+}
+
+.sm{
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+}
